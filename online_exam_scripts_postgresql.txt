@@ -1,0 +1,37 @@
+-- Database: online-exam
+
+-- DROP DATABASE "online-exam";
+
+CREATE DATABASE "online-exam"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+	
+-- Table: public.exams
+
+-- DROP TABLE public.exams;
+
+CREATE TABLE public.exams
+(
+    id integer NOT NULL DEFAULT nextval('exams_id_seq'::regclass),
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    last_updated_by character varying COLLATE pg_catalog."default",
+    title character varying COLLATE pg_catalog."default",
+    description character varying COLLATE pg_catalog."default",
+    CONSTRAINT exams_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.exams
+    OWNER to postgres;
+	
+INSERT INTO public.exams(
+	id, created_at, updated_at, last_updated_by, title, description)
+	VALUES (?, ?, ?, ?, ?, ?);-exam
