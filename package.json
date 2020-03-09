@@ -1,0 +1,22 @@
+{
+  "name": "flask-angular-crud-project-viswajeetlenka9",
+  "version": "1.0.0",
+  "description": "This is a web project with Flask as backend API and Anngular 8 as front end client side, which perform CRUD operation of Exams.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viswajeetlenka9/Flask.git"
+  },
+  "keywords": [
+    "npm",
+    "npm-flask-angular-crud"
+  ],
+  "author": "Viswajeet Lenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viswajeetlenka9/Flask/issues"
+  },
+  "homepage": "https://github.com/viswajeetlenka9/Flask#readme",
+  "publishConfig": {
+     "registry": "https://npm.pkg.github.com/" }
+}
